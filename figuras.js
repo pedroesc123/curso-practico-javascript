@@ -1,12 +1,9 @@
 // Código del cuadrado
 console.group("Cuadrados");
-// const ladoCuadrado = 5;
-// console.log(`Los lados del cuadrado miden: ${ladoCuadrado}cm.`);
 
 function perimetroCuadrado(lado){
     return lado*4;
 }
-
 
 function areaCuadrado(lado) {
     return lado * lado;
@@ -36,7 +33,6 @@ function diametroCirculo(radio) {
     return radio * 2;
 }
 
-//Pi
 const pi = (Math.PI).toFixed(3);
 
 function perimetroCirculo(radio) {
@@ -58,6 +54,7 @@ function calcularPerimetroCuadrado() {
     const perimetro = perimetroCuadrado(value);
     alert(`El perimetro del cuadrado es: ${perimetro}`);
 }
+
 function calcularAreaCuadrado() {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
