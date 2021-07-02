@@ -86,3 +86,20 @@ function calcularAreaTriangulo() {
     const area = areaTriangulo(valueBase, valueAltura);
     alert(`El perimetro del triangulo es: ${area}`);
 }
+
+function calcularAlturaTriangulo() {
+    const lado1 = document.getElementById("InputTriangulo1");
+    const lado2 = document.getElementById("InputTriangulo2");
+    const base = document.getElementById("InputTrianguloBase");
+
+    const valueLado1 = Number(lado1.value);
+    const valueLado2 = Number(lado2.value);
+    const valueBase = Number(base.value);
+
+    if(valueLado1 == valueLado2) {
+        const altura = Math.sqrt((valueLado1 ** 2) - ((valueBase/2) ** 2));
+        alert(`La altura del triángulo es: ${altura}`); 
+    } else {
+        alert("El triángulo no es isosceles");
+    }
+}
